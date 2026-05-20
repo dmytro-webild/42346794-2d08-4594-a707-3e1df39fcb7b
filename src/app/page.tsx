@@ -32,66 +32,29 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingInline
       navItems={[
-        {
-          name: "Scanner",
-          id: "features",
-        },
-        {
-          name: "Pricing",
-          id: "pricing",
-        },
-        {
-          name: "Support",
-          id: "contact",
-        },
+        { name: "Scanner", id: "features" },
+        { name: "Pricing", id: "pricing" },
+        { name: "Support", id: "contact" },
       ]}
       brandName="TradeAI"
       button={{
-        text: "Sign In",
-        href: "#",
-      }}
+        text: "Sign In",        href: "#"}}
     />
   </div>
 
   <div id="hero" data-section="hero">
       <HeroSplitDualMedia
-      background={{
-        variant: "plain",
-      }}
+      background={{ variant: "plain" }}
       title="Most Powerful AI Trading Analysis"
       description="Upload your MT4/MT5 charts and get precise entry, TakeProfit, and StopLoss results in 10 seconds. Join the revolution in automated market scanning."
       tag="Powered by Advanced AI"
       buttons={[
-        {
-          text: "Start Scanning",
-          href: "#",
-        },
-        {
-          text: "Download APK",
-          href: "#",
-        },
+        { text: "Start Scanning", href: "#" },
+        { text: "Download APK", href: "#" },
       ]}
       mediaItems={[
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/computer-dark-room-with-graphs-screen_169016-57208.jpg",
-          imageAlt: "AI Trading Dashboard",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/ai-powered-device-concept_23-2151924166.jpg",
-          imageAlt: "Multi-Chart Analysis",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/ai-powered-device-concept_23-2151924115.jpg",
-          imageAlt: "Ai powered device concept",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/trading-stock-stock-market-business-graph-trading-investment-broker-stock-exchange-market_169016-66447.jpg",
-          imageAlt: "Trading stock Stock market Business graph",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/high-tech-office-ready-stock-trading_482257-121465.jpg",
-          imageAlt: "High tech office ready for stock trading",
-        },
+        { imageSrc: "http://img.b2bpic.net/free-photo/computer-dark-room-with-graphs-screen_169016-57208.jpg", imageAlt: "AI Trading Dashboard" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/ai-powered-device-concept_23-2151924166.jpg", imageAlt: "Multi-Chart Analysis" }
       ]}
       mediaAnimation="slide-up"
       rating={5}
@@ -107,26 +70,11 @@ export default function LandingPage() {
       useInvertedBackground={true}
       features={[
         {
-          title: "Single Chart Scanning",
-          description: "Quick analysis for individual trading setups with real-time indicators.",
-          imageSrc: "http://img.b2bpic.net/free-photo/young-man-looking-into-crypto-currency-stock-market_482257-2365.jpg",
-          titleImageSrc: "http://img.b2bpic.net/free-photo/street-statistics-debt-loss-globe_1150-1721.jpg",
-          buttonText: "Try Now",
-        },
+          title: "Single Chart Scanning",          description: "Quick analysis for individual trading setups with real-time indicators.",          imageSrc: "http://img.b2bpic.net/free-photo/young-man-looking-into-crypto-currency-stock-market_482257-2365.jpg",          titleImageSrc: "http://img.b2bpic.net/free-photo/street-statistics-debt-loss-globe_1150-1721.jpg",          buttonText: "Try Now"},
         {
-          title: "Multi-Chart Scan",
-          description: "Scan up to 6 charts simultaneously to identify market correlations.",
-          imageSrc: "http://img.b2bpic.net/free-photo/woman-tracks-financial-data-computer_482257-120344.jpg",
-          titleImageSrc: "http://img.b2bpic.net/free-photo/digital-led-scoreboard-display_187299-47308.jpg",
-          buttonText: "View Pro",
-        },
+          title: "Multi-Chart Scan",          description: "Scan up to 6 charts simultaneously to identify market correlations.",          imageSrc: "http://img.b2bpic.net/free-photo/woman-tracks-financial-data-computer_482257-120344.jpg",          titleImageSrc: "http://img.b2bpic.net/free-photo/digital-led-scoreboard-display_187299-47308.jpg",          buttonText: "View Pro"},
         {
-          title: "Smart Money Logic",
-          description: "Full analysis integrating AI reasoning and Smart Money concepts.",
-          imageSrc: "http://img.b2bpic.net/free-photo/abstract-neon-light-waves-wonder-wheel_23-2148328127.jpg",
-          titleImageSrc: "http://img.b2bpic.net/free-photo/laptop-showing-isolated-chroma-key-help-strategy-planning_482257-126434.jpg",
-          buttonText: "Learn AI",
-        },
+          title: "Smart Money Logic",          description: "Full analysis integrating AI reasoning and Smart Money concepts.",          imageSrc: "http://img.b2bpic.net/free-photo/abstract-neon-light-waves-wonder-wheel_23-2148328127.jpg",          titleImageSrc: "http://img.b2bpic.net/free-photo/laptop-showing-isolated-chroma-key-help-strategy-planning_482257-126434.jpg",          buttonText: "Learn AI"},
       ]}
       title="Smart Scanning Engine"
       description="Our AI-powered engine processes your charts using proven technical indicators and Smart Money concepts."
@@ -140,48 +88,9 @@ export default function LandingPage() {
       gridVariant="uniform-all-items-equal"
       useInvertedBackground={false}
       products={[
-        {
-          id: "p1",
-          name: "AI Scanner",
-          price: "Free",
-          variant: "Basic",
-          imageSrc: "http://img.b2bpic.net/free-photo/hands-holding-up-blue-letters-forming-abbreviation-ai_53876-165239.jpg",
-        },
-        {
-          id: "p2",
-          name: "Pro Scanner",
-          price: "$49/mo",
-          variant: "Advanced",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-stethoscope-cardiogram-chart_23-2147941823.jpg",
-        },
-        {
-          id: "p3",
-          name: "Multi-Chart Engine",
-          price: "$99/mo",
-          variant: "Elite",
-          imageSrc: "http://img.b2bpic.net/free-photo/candlestick-graph-investment-financial-analysis-report-sign-symbol-icon-3d-rendering_56104-1918.jpg",
-        },
-        {
-          id: "p4",
-          name: "Smart Money AI",
-          price: "$149/mo",
-          variant: "Ultimate",
-          imageSrc: "http://img.b2bpic.net/free-photo/business-analysis-report-folder-icon_53876-14638.jpg",
-        },
-        {
-          id: "p5",
-          name: "Priority Analysis",
-          price: "$199/mo",
-          variant: "Expert",
-          imageSrc: "http://img.b2bpic.net/free-photo/group-businesspeople-working-graph-office_23-2147826525.jpg",
-        },
-        {
-          id: "p6",
-          name: "Enterprise Logic",
-          price: "Custom",
-          variant: "Pro",
-          imageSrc: "http://img.b2bpic.net/free-vector/adaptive-responsive-web-design_98292-2071.jpg",
-        },
+        { id: "p1", name: "AI Scanner", price: "Free", variant: "Basic", imageSrc: "http://img.b2bpic.net/free-photo/hands-holding-up-blue-letters-forming-abbreviation-ai_53876-165239.jpg" },
+        { id: "p2", name: "Pro Scanner", price: "$49/mo", variant: "Advanced", imageSrc: "http://img.b2bpic.net/free-photo/close-up-stethoscope-cardiogram-chart_23-2147941823.jpg" },
+        { id: "p3", name: "Multi-Chart Engine", price: "$99/mo", variant: "Elite", imageSrc: "http://img.b2bpic.net/free-photo/candlestick-graph-investment-financial-analysis-report-sign-symbol-icon-3d-rendering_56104-1918.jpg" }
       ]}
       title="Platform Tools"
       description="High-quality analytical tools for professional trading."
@@ -195,27 +104,9 @@ export default function LandingPage() {
       gridVariant="uniform-all-items-equal"
       useInvertedBackground={true}
       metrics={[
-        {
-          id: "m1",
-          value: "94%",
-          title: "Accuracy Rate",
-          description: "AI-calculated historical precision",
-          icon: CheckCircle,
-        },
-        {
-          id: "m2",
-          value: "10s",
-          title: "Scan Speed",
-          description: "Rapid analysis results",
-          icon: Zap,
-        },
-        {
-          id: "m3",
-          value: "20/d",
-          title: "Daily Limit",
-          description: "Scans per account level",
-          icon: Shield,
-        },
+        { id: "m1", value: "94%", title: "Accuracy Rate", description: "AI-calculated historical precision", icon: CheckCircle },
+        { id: "m2", value: "10s", title: "Scan Speed", description: "Rapid analysis results", icon: Zap },
+        { id: "m3", value: "20/d", title: "Daily Limit", description: "Scans per account level", icon: Shield },
       ]}
       title="Market Impact"
       description="Proven results for institutional and retail traders worldwide."
@@ -229,52 +120,13 @@ export default function LandingPage() {
       useInvertedBackground={false}
       plans={[
         {
-          id: "basic",
-          tag: "Essential",
-          price: "$29",
-          period: "/mo",
-          description: "For individual traders",
-          button: {
-            text: "Get Started",
-          },
-          featuresTitle: "Included Features",
-          features: [
-            "Single Chart Scanner",
-            "20 Scans Daily",
-            "Basic Indicators",
-          ],
+          id: "basic", tag: "Essential", price: "$29", period: "/mo", description: "For individual traders", button: { text: "Get Started" }, featuresTitle: "Included Features", features: ["Single Chart Scanner", "20 Scans Daily", "Basic Indicators"]
         },
         {
-          id: "pro",
-          tag: "Popular",
-          price: "$89",
-          period: "/mo",
-          description: "For consistent profitability",
-          button: {
-            text: "Go Pro",
-          },
-          featuresTitle: "All Basic Features Plus:",
-          features: [
-            "6 Multi-Chart Scanner",
-            "Smart Money AI",
-            "Full History Feed",
-          ],
+          id: "pro", tag: "Popular", price: "$89", period: "/mo", description: "For consistent profitability", button: { text: "Go Pro" }, featuresTitle: "All Basic Features Plus:", features: ["6 Multi-Chart Scanner", "Smart Money AI", "Full History Feed"]
         },
         {
-          id: "elite",
-          tag: "Expert",
-          price: "$199",
-          period: "/mo",
-          description: "For power traders",
-          button: {
-            text: "Go Elite",
-          },
-          featuresTitle: "All Pro Features Plus:",
-          features: [
-            "Unlimited Fundamentals",
-            "Priority Support",
-            "Expert Logic",
-          ],
+          id: "elite", tag: "Expert", price: "$199", period: "/mo", description: "For power traders", button: { text: "Go Elite" }, featuresTitle: "All Pro Features Plus:", features: ["Unlimited Fundamentals", "Priority Support", "Expert Logic"]
         },
       ]}
       title="Pick Your Edge"
@@ -288,60 +140,14 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={true}
       testimonials={[
-        {
-          id: "1",
-          name: "Sarah J.",
-          role: "Forex Trader",
-          company: "GrowthCorp",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/confident-middle-aged-businesswoman_74855-1573.jpg",
-        },
-        {
-          id: "2",
-          name: "Michael C.",
-          role: "Market Analyst",
-          company: "InnovateLab",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/cheerful-business-leader-showing-statistics_1262-2964.jpg",
-        },
-        {
-          id: "3",
-          name: "Emily R.",
-          role: "Quant Researcher",
-          company: "StrategyXYZ",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/closeup-handsome-young-office-worker-glasses-suit-smiling-camera-looking-happy-white_1258-173667.jpg",
-        },
-        {
-          id: "4",
-          name: "David K.",
-          role: "Senior Trader",
-          company: "PropFirm",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/experienced-boss-sitting-showing-strategy-plan_74855-9868.jpg",
-        },
-        {
-          id: "5",
-          name: "Alex W.",
-          role: "Portfolio Manager",
-          company: "GlobalFunds",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-confident-businessman-wearing-glasses_158595-5355.jpg",
-        },
+        { id: "1", name: "Sarah J.", role: "Forex Trader", company: "GrowthCorp", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/confident-middle-aged-businesswoman_74855-1573.jpg" },
+        { id: "2", name: "Michael C.", role: "Market Analyst", company: "InnovateLab", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/cheerful-business-leader-showing-statistics_1262-2964.jpg" },
+        { id: "3", name: "Emily R.", role: "Quant Researcher", company: "StrategyXYZ", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/closeup-handsome-young-office-worker-glasses-suit-smiling-camera-looking-happy-white_1258-173667.jpg" }
       ]}
       kpiItems={[
-        {
-          value: "5000+",
-          label: "Active Users",
-        },
-        {
-          value: "4.9/5",
-          label: "Satisfaction",
-        },
-        {
-          value: "100k+",
-          label: "Charts Scanned",
-        },
+        { value: "5000+", label: "Active Users" },
+        { value: "4.9/5", label: "Satisfaction" },
+        { value: "100k+", label: "Charts Scanned" },
       ]}
       title="Traders Love Us"
       description="Thousands of satisfied traders rely on our AI to scale their results."
@@ -352,21 +158,9 @@ export default function LandingPage() {
       <FaqSplitText
       useInvertedBackground={false}
       faqs={[
-        {
-          id: "f1",
-          title: "Which platforms are supported?",
-          content: "Our AI scanner is optimized for MT4 and MT5 platform data exports.",
-        },
-        {
-          id: "f2",
-          title: "How fast is the analysis?",
-          content: "Most chart scans are completed and returned with full signals in under 10 seconds.",
-        },
-        {
-          id: "f3",
-          title: "Can I use the scanner on mobile?",
-          content: "Yes, we provide an official APK download for direct installation on mobile devices.",
-        },
+        { id: "f1", title: "Which platforms are supported?", content: "Our AI scanner is optimized for MT4 and MT5 platform data exports." },
+        { id: "f2", title: "How fast is the analysis?", content: "Most chart scans are completed and returned with full signals in under 10 seconds." },
+        { id: "f3", title: "Can I use the scanner on mobile?", content: "Yes, we provide an official APK download for direct installation on mobile devices." },
       ]}
       sideTitle="Common Questions"
       faqsAnimation="slide-up"
@@ -379,23 +173,10 @@ export default function LandingPage() {
       title="Need Help? Get Support."
       description="Have questions about integration or our AI logic? Reach out to our 24/7 priority support team."
       inputs={[
-        {
-          name: "name",
-          type: "text",
-          placeholder: "Your Name",
-          required: true,
-        },
-        {
-          name: "email",
-          type: "email",
-          placeholder: "Your Email",
-          required: true,
-        },
+        { name: "name", type: "text", placeholder: "Your Name", required: true },
+        { name: "email", type: "email", placeholder: "Your Email", required: true },
       ]}
-      textarea={{
-        name: "message",
-        placeholder: "Describe your query...",
-      }}
+      textarea={{ name: "message", placeholder: "Describe your query..." }}
       imageSrc="http://img.b2bpic.net/free-photo/office-worker-using-finance-graphs_23-2150408705.jpg"
       mediaPosition="right"
     />
@@ -406,38 +187,10 @@ export default function LandingPage() {
       logoText="TradeAI"
       columns={[
         {
-          title: "Platform",
-          items: [
-            {
-              label: "Scanner",
-              href: "#",
-            },
-            {
-              label: "Pricing",
-              href: "#",
-            },
-            {
-              label: "Mobile APK",
-              href: "#",
-            },
-          ],
+          title: "Platform",          items: [{ label: "Scanner", href: "#" }, { label: "Pricing", href: "#" }, { label: "Mobile APK", href: "#" }],
         },
         {
-          title: "Support",
-          items: [
-            {
-              label: "Help Center",
-              href: "#",
-            },
-            {
-              label: "Contact Us",
-              href: "#",
-            },
-            {
-              label: "Terms of Use",
-              href: "#",
-            },
-          ],
+          title: "Support",          items: [{ label: "Help Center", href: "#" }, { label: "Contact Us", href: "#" }, { label: "Terms of Use", href: "#" }],
         },
       ]}
     />
