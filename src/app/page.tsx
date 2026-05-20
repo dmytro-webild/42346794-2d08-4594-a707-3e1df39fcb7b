@@ -15,8 +15,7 @@ import TestimonialCardSixteen from '@/components/sections/testimonial/Testimonia
 import { CheckCircle, Shield, Zap } from "lucide-react";
 
 export default function LandingPage() {
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -45,7 +44,7 @@ export default function LandingPage() {
         { name: "Support", id: "contact" },
       ]}
       brandName="TradeAI"
-      button={{ text: "Sign In", onClick: (e) => e.preventDefault() }}
+      button={{ text: "Sign In", onClick: () => console.log("Clicked") }}
     />
   </div>
 
@@ -56,7 +55,7 @@ export default function LandingPage() {
       description="Upload your MT4/MT5 charts and get precise entry, TakeProfit, and StopLoss results in 10 seconds. Join the revolution in automated market scanning."
       tag="Powered by Advanced AI"
       buttons={[
-        { text: "Start Scanning", onClick: (e) => scrollToSection(e, "features") },
+        { text: "Start Scanning", onClick: () => scrollToSection("features") },
         { text: "Download APK", href: "#" },
       ]}
       mediaItems={[
