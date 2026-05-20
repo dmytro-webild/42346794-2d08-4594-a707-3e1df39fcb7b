@@ -89,8 +89,8 @@ export default function LandingPage() {
       useInvertedBackground={false}
       products={[
         { id: "p1", name: "AI Scanner", price: "Free", variant: "Basic", imageSrc: "http://img.b2bpic.net/free-photo/hands-holding-up-blue-letters-forming-abbreviation-ai_53876-165239.jpg" },
-        { id: "p2", name: "Pro Scanner", price: "$49/mo", variant: "Advanced", imageSrc: "http://img.b2bpic.net/free-photo/close-up-stethoscope-cardiogram-chart_23-2147941823.jpg" },
-        { id: "p3", name: "Multi-Chart Engine", price: "$99/mo", variant: "Elite", imageSrc: "http://img.b2bpic.net/free-photo/candlestick-graph-investment-financial-analysis-report-sign-symbol-icon-3d-rendering_56104-1918.jpg" }
+        { id: "p2", name: "Pro Scanner", price: "Free", variant: "Advanced", imageSrc: "http://img.b2bpic.net/free-photo/close-up-stethoscope-cardiogram-chart_23-2147941823.jpg" },
+        { id: "p3", name: "Multi-Chart Engine", price: "Free", variant: "Elite", imageSrc: "http://img.b2bpic.net/free-photo/candlestick-graph-investment-financial-analysis-report-sign-symbol-icon-3d-rendering_56104-1918.jpg" }
       ]}
       title="Platform Tools"
       description="High-quality analytical tools for professional trading."
@@ -120,13 +120,13 @@ export default function LandingPage() {
       useInvertedBackground={false}
       plans={[
         {
-          id: "basic", tag: "Essential", price: "$29", period: "/mo", description: "For individual traders", button: { text: "Get Started" }, featuresTitle: "Included Features", features: ["Single Chart Scanner", "20 Scans Daily", "Basic Indicators"]
+          id: "basic", tag: "Free Plan", price: "$0", period: "/mo", description: "Get started for free", button: { text: "Get Started" }, featuresTitle: "Included Features", features: ["Single Chart Scanner", "20 Scans Daily", "Basic Indicators"]
         },
         {
-          id: "pro", tag: "Popular", price: "$89", period: "/mo", description: "For consistent profitability", button: { text: "Go Pro" }, featuresTitle: "All Basic Features Plus:", features: ["6 Multi-Chart Scanner", "Smart Money AI", "Full History Feed"]
+          id: "pro", tag: "Free Plan", price: "$0", period: "/mo", description: "Unlock pro features", button: { text: "Get Pro" }, featuresTitle: "Included Features:", features: ["6 Multi-Chart Scanner", "Smart Money AI", "Full History Feed"]
         },
         {
-          id: "elite", tag: "Expert", price: "$199", period: "/mo", description: "For power traders", button: { text: "Go Elite" }, featuresTitle: "All Pro Features Plus:", features: ["Unlimited Fundamentals", "Priority Support", "Expert Logic"]
+          id: "elite", tag: "Free Plan", price: "$0", period: "/mo", description: "Ultimate experience", button: { text: "Get Elite" }, featuresTitle: "Included Features:", features: ["Unlimited Fundamentals", "Priority Support", "Expert Logic"]
         },
       ]}
       title="Pick Your Edge"
