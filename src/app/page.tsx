@@ -15,6 +15,14 @@ import TestimonialCardSixteen from '@/components/sections/testimonial/Testimonia
 import { CheckCircle, Shield, Zap } from "lucide-react";
 
 export default function LandingPage() {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-stagger"
@@ -37,8 +45,7 @@ export default function LandingPage() {
         { name: "Support", id: "contact" },
       ]}
       brandName="TradeAI"
-      button={{
-        text: "Sign In",        href: "#"}}
+      button={{ text: "Sign In", onClick: (e) => e.preventDefault() }}
     />
   </div>
 
@@ -49,7 +56,7 @@ export default function LandingPage() {
       description="Upload your MT4/MT5 charts and get precise entry, TakeProfit, and StopLoss results in 10 seconds. Join the revolution in automated market scanning."
       tag="Powered by Advanced AI"
       buttons={[
-        { text: "Start Scanning", href: "#" },
+        { text: "Start Scanning", onClick: (e) => scrollToSection(e, "features") },
         { text: "Download APK", href: "#" },
       ]}
       mediaItems={[
@@ -70,11 +77,11 @@ export default function LandingPage() {
       useInvertedBackground={true}
       features={[
         {
-          title: "Single Chart Scanning",          description: "Quick analysis for individual trading setups with real-time indicators.",          imageSrc: "http://img.b2bpic.net/free-photo/young-man-looking-into-crypto-currency-stock-market_482257-2365.jpg",          titleImageSrc: "http://img.b2bpic.net/free-photo/street-statistics-debt-loss-globe_1150-1721.jpg",          buttonText: "Try Now"},
+          title: "Single Chart Scanning", description: "Quick analysis for individual trading setups with real-time indicators.", imageSrc: "http://img.b2bpic.net/free-photo/young-man-looking-into-crypto-currency-stock-market_482257-2365.jpg", titleImageSrc: "http://img.b2bpic.net/free-photo/street-statistics-debt-loss-globe_1150-1721.jpg", buttonText: "Try Now"},
         {
-          title: "Multi-Chart Scan",          description: "Scan up to 6 charts simultaneously to identify market correlations.",          imageSrc: "http://img.b2bpic.net/free-photo/woman-tracks-financial-data-computer_482257-120344.jpg",          titleImageSrc: "http://img.b2bpic.net/free-photo/digital-led-scoreboard-display_187299-47308.jpg",          buttonText: "View Pro"},
+          title: "Multi-Chart Scan", description: "Scan up to 6 charts simultaneously to identify market correlations.", imageSrc: "http://img.b2bpic.net/free-photo/woman-tracks-financial-data-computer_482257-120344.jpg", titleImageSrc: "http://img.b2bpic.net/free-photo/digital-led-scoreboard-display_187299-47308.jpg", buttonText: "View Pro"},
         {
-          title: "Smart Money Logic",          description: "Full analysis integrating AI reasoning and Smart Money concepts.",          imageSrc: "http://img.b2bpic.net/free-photo/abstract-neon-light-waves-wonder-wheel_23-2148328127.jpg",          titleImageSrc: "http://img.b2bpic.net/free-photo/laptop-showing-isolated-chroma-key-help-strategy-planning_482257-126434.jpg",          buttonText: "Learn AI"},
+          title: "Smart Money Logic", description: "Full analysis integrating AI reasoning and Smart Money concepts.", imageSrc: "http://img.b2bpic.net/free-photo/abstract-neon-light-waves-wonder-wheel_23-2148328127.jpg", titleImageSrc: "http://img.b2bpic.net/free-photo/laptop-showing-isolated-chroma-key-help-strategy-planning_482257-126434.jpg", buttonText: "Learn AI"},
       ]}
       title="Smart Scanning Engine"
       description="Our AI-powered engine processes your charts using proven technical indicators and Smart Money concepts."
@@ -187,10 +194,10 @@ export default function LandingPage() {
       logoText="TradeAI"
       columns={[
         {
-          title: "Platform",          items: [{ label: "Scanner", href: "#" }, { label: "Pricing", href: "#" }, { label: "Mobile APK", href: "#" }],
+          title: "Platform", items: [{ label: "Scanner", href: "#" }, { label: "Pricing", href: "#" }, { label: "Mobile APK", href: "#" }],
         },
         {
-          title: "Support",          items: [{ label: "Help Center", href: "#" }, { label: "Contact Us", href: "#" }, { label: "Terms of Use", href: "#" }],
+          title: "Support", items: [{ label: "Help Center", href: "#" }, { label: "Contact Us", href: "#" }, { label: "Terms of Use", href: "#" }],
         },
       ]}
     />
